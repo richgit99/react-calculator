@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  background-color: rgb(60, 60, 61);
+  color: white;
+  border: 2px solid rgb(52, 52, 55);
+  
+}
+
+header h1{
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  width: 97%;
+  word-spacing: 0.1em;text-align: center;
+}
+
+header small{
+  font-size: small;
+}
+
+.App {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+  border: 2px solid black;
+  min-height: 300px;
+  padding: 0;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  padding: 0.5em;
+  background-color: #CCC8AA;
+  padding-top: 0.7em;
+}
+
+.App h1 {
+
+  width: 100%;
+  padding-left: 0.5em;
+  background-color: rgba(229, 226, 226, 0.5);
+  background-color: #F1EFEF;
+  min-height: 60px;display: flex;align-items: center;
+  margin-top:0;
+  border: 3px solid black;
+  margin-bottom: 0;
+}
+
+.App>div {
+  display: flex;
+  width: 100%;
+  border: 1.5px solid black;
+  padding: 0.5em;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  margin-top: 0.3em;
+  /* flex-basis: 100px; */
+}
+
+.App>div>button {
+  flex-basis: 130px;
+  flex-grow: 1;
+  /* width: 30%; */
+  padding: 0.8em 0;
+  width: 30%;
+  font-weight: bold;
+  font-size: large;
+  background-color: #F0F0F0;
+}
+
+@media (max-width:500px) {
+  .App>div>button {
+    flex-basis: 80px;}
+}
+
+@media (max-width:300px) {
+  .App>div>button {
+    flex-basis: 50px;}
+}
